@@ -6,7 +6,7 @@ dep_name VARCHAR
 dep_emp
 -
 emp_no INTEGER PK FK - employees.emp_no
-dep_no VARCHAR(4) FK >- departments.dept_no
+dep_no VARCHAR(4) PK FK >- departments.dept_no
 
 
 dept_manager
@@ -32,4 +32,4 @@ salary INTEGER
 titles
 -
 title_ID VARCHAR PK
-title VARCHAR
+title VARCHAR 

@@ -15,7 +15,7 @@ CREATE TABLE "dep_emp" (
     "emp_no" INTEGER   NOT NULL,
     "dep_no" VARCHAR(4)   NOT NULL,
     CONSTRAINT "pk_dep_emp" PRIMARY KEY (
-        "emp_no"
+        "emp_no","dep_no"
      )
 );
 
