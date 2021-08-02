@@ -40,6 +40,28 @@ FROM employees
 WHERE first_name = 'Hercules'
 AND last_name LIKE 'B%';
 
+--6. Query for all employees in the Sales department, including 
+--   their employee number, last name, first name, and department name.
+
+SELECT  de.emp_no, last_name, first_name, dep_name
+FROM  employees AS e
+JOIN dep_emp AS de
+	ON e.emp_no = de.emp_no
+JOIN departments AS d
+	ON de.dep_no = d.dept_no
+	WHERE dep_name = 'Sales';
+
+
+
+
+
+
+
+
+
+
+
+
 	
 	
 	
