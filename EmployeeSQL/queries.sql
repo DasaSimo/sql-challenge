@@ -73,6 +73,20 @@ ORDER BY "Last name frequency count" DESC;
 
 
 
+---BONUS
+--AVERAGE SALARY by TITLE
+select * from titles
+
+SELECT ROUND(AVG(salary),2) "Average Salary",title FROM employees e 
+JOIN salaries s
+ON e.emp_no = s.emp_no
+JOIN titles t
+ON e.emp_title_id = t."title_ID"
+GROUP BY title
+--ORDER BY 1 DESC
+
+
+
 
 
 
