@@ -1,28 +1,30 @@
 ﻿-- Exported from QuickDBD: https://www.quickdatabasediagrams.com/
-
-CREATE TABLE "departments" (
-    "dept_no" VARCHAR(4)   NOT NULL,
-    "dep_name" VARCHAR   NOT NULL,
-    CONSTRAINT "pk_departments" PRIMARY KEY (
-        "dept_no"
-     )
-);
+-- Link to schema: https://app.quickdatabasediagrams.com/#/d/UO4bBE
+-- NOTE! If you have used non-SQL datatypes in your design, you will have to change these here.
 
 
 CREATE TABLE "titles" (
-    "title_ID" VARCHAR   NOT NULL,
-    "title" VARCHAR   NOT NULL,
+    "title_ID" VARCHAR(5)   NOT NULL,
+    "title" VARCHAR(50)   NOT NULL,
     CONSTRAINT "pk_titles" PRIMARY KEY (
         "title_ID"
      )
 );
 
+CREATE TABLE "departments" (
+    "dept_no" VARCHAR(4)   NOT NULL,
+    "dep_name" VARCHAR(50)   NOT NULL,
+    CONSTRAINT "pk_departments" PRIMARY KEY (
+        "dept_no"
+     )
+);
+
 CREATE TABLE "employees" (
     "emp_no" INTEGER   NOT NULL,
-    "emp_title_id" VARCHAR   NOT NULL,
+    "emp_title_id" VARCHAR(5)   NOT NULL,
     "birth_date" DATE   NOT NULL,
-    "first_name" VARCHAR   NOT NULL,
-    "last_name" VARCHAR   NOT NULL,
+    "first_name" VARCHAR(50)   NOT NULL,
+    "last_name" VARCHAR(50)   NOT NULL,
     "sex" CHAR(1)   NOT NULL,
     "hire_date" DATE   NOT NULL,
     CONSTRAINT "pk_employees" PRIMARY KEY (
