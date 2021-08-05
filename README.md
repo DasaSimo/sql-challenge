@@ -12,7 +12,7 @@
 The database of employees from that period contains six CSV files, which were used to design the tables to hold data in the CSVs, import the CSVs into a SQL database, and answer questions about the data. ERD of the tables was sketched by using a tool [http://www.quickdatabasediagrams.com](http://www.quickdatabasediagrams.com). 
 
 #### Data Engineering
-The information given was used to create a table schema for each of the six CSV files. Data types, primary keys, foreign keys, and other constraints were specified based on these information. Tables were created as folllows: "departments, titles, employees, dep_emp, dept_manager, salaries.
+The information given was used to create a table schema for each of the six CSV files. Data types, primary keys, foreign keys, and other constraints were specified based on these information. Tables were created as folllows: titles, departments, employees, dep_emp, dept_manager, salaries.
 
 #### Data Analysis
  
